@@ -1,0 +1,86 @@
+main {
+    background-color: #1c1c1c;
+
+    .current-series {
+        background-color: #0282f9;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        left: 9.5rem;
+        transform: translateY(-22px);
+        z-index: 10;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 2.5rem 0 1rem 0;
+        max-width: 1200px;
+        display: flex;
+        row-gap: 2.8rem;
+        flex-wrap: wrap;
+    }
+    .card-comics {
+        flex: 0 0 calc(100% / 6);
+    }
+
+    button {
+        margin: auto;
+        padding: 0.5rem 3.8rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+        background-color: #0282f9;
+    }
+
+    .home-cards-img {
+        width: 90%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: 2px 5px;
+    }
+    .text {
+        max-width: 160px;
+        margin-top: 0.8rem;
+        color: white;
+        font-size: 0.8rem;
+    }
+}
+
+.shop {
+    background-color: #0282f9;
+    padding: 2.5rem;
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        .block {
+            flex: 0 1 20%;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                width: 20%;
+            }
+            span {
+                width: 80%;
+                font-size: 0.8rem;
+                color: white;
+                a {
+                    text-decoration: none;
+                    &:visited,
+                    &:hover,
+                    &:active {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

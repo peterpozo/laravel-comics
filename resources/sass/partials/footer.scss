@@ -1,0 +1,85 @@
+footer {
+    .background {
+        position: relative;
+        overflow: hidden;
+        gap: 10rem;
+        background-image: url("/images/footer-bg.jpg");
+        background-size: cover;
+        padding: 2.5rem 0 4.5rem 4.5rem;
+        .blocks {
+            display: flex;
+            gap: 5rem;
+            font-size: 0.7rem;
+            color: white;
+            margin-left: 4rem;
+            .left-block {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            ul {
+                list-style: none;
+                h2 {
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                }
+                li {
+                    color: #7f807b;
+                    margin-bottom: 0.5rem;
+                    a {
+                        text-decoration: none;
+                        &:visited,
+                        &:hover,
+                        &:active {
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            width: 40%;
+            position: absolute;
+            top: -6.5rem;
+            left: 50rem;
+        }
+    }
+    .sub-footer {
+        height: 5rem;
+        background-color: #303030;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                height: fit-content;
+                padding: 0.6rem 0.8rem;
+                background-color: transparent;
+                border: 2px solid #0282f9;
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .block-left {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                a {
+                    width: 9%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                span {
+                    color: #0282f9;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

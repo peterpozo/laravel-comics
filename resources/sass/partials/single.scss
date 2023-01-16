@@ -1,0 +1,183 @@
+.img-box {
+    width: 170px;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: -21.5rem;
+    z-index: 100;
+    border: 1px solid white;
+    .view-gallery {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: cyan;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .comic-book {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        background-color: cyan;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .single-page-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.blue-band {
+    height: 4rem;
+    background-color: #0282f9;
+}
+
+.content {
+    display: flex;
+    background-color: white;
+    padding: 4rem 17rem 4rem 17rem;
+
+    .text-content {
+        position: relative;
+        width: 70%;
+        margin-right: 2rem;
+        .price-band {
+            display: flex;
+            background-color: #55ba59;
+            border-bottom: 1px solid black;
+            margin: 1rem 0 1rem 0;
+            .left-content {
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0.6rem;
+
+                .price {
+                    .price-tag {
+                        color: #a7f98f;
+                    }
+                    .dollar-price {
+                        color: white;
+                    }
+                }
+
+                .available {
+                    color: white;
+                    color: #a7f98f;
+                    text-transform: uppercase;
+                }
+            }
+            .right-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-left: 1px solid black;
+                width: 25%;
+                padding: 0.6rem;
+                .check-availability {
+                    color: white;
+                }
+                i {
+                    color: white;
+                    font-size: 0.5rem;
+                }
+            }
+        }
+
+        .main-text {
+            line-height: 160%;
+        }
+    }
+    .img-block {
+        width: 30%;
+        position: relative;
+
+        .img-container {
+            width: 100%;
+            height: fit-content;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .advertisement {
+            position: absolute;
+            right: 0;
+            transform: translateY(-1rem);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+.page-info {
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 2rem 10rem 5rem 10rem;
+
+    .talent,
+    .specs {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .art,
+    .written,
+    .series,
+    .us-price,
+    .sale-date {
+        display: flex;
+        padding: 0.5rem;
+        gap: 10rem;
+    }
+
+    .art {
+        border-top: 1px solid gray;
+    }
+
+    .written {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .series {
+        border-top: 1px solid gray;
+    }
+
+    .us-price {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .sale-date {
+        border-bottom: 1px solid gray;
+    }
+
+    .list {
+        font-size: 0.7rem;
+    }
+
+    .list ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

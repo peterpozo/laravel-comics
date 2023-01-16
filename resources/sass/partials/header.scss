@@ -1,0 +1,100 @@
+header {
+    .header-blue-band {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4rem;
+        height: 1.2rem;
+        background-color: #0282f9;
+        padding: 0.4rem 8rem 0.4rem 0;
+        font-size: 0.7rem;
+        color: white;
+        font-weight: bold;
+
+        .additional-sites {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+
+    .navbar {
+        height: 5.5rem;
+        background-color: white;
+    }
+    .container {
+        margin: auto;
+        max-width: 1200px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-link {
+        height: 100%;
+        padding: 0.9rem;
+
+        img {
+            height: 100%;
+        }
+    }
+    ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+        gap: 2rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #464646;
+        li {
+            height: 100%;
+            position: relative;
+            &:hover::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #0282f9;
+            }
+            a {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                &:visited,
+                &:hover,
+                &:active {
+                    color: inherit;
+                }
+            }
+        }
+
+        .search-bar {
+            border-bottom: 2px solid #0282f9;
+            height: fit-content;
+            align-self: center;
+        }
+
+        input {
+            border: none;
+            &::placeholder {
+                display: flex;
+                text-align: end;
+            }
+        }
+
+        i {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 0.3rem;
+        }
+    }
+}
+.jumbotron {
+    position: relative;
+    height: 21.5rem;
+    background-image: url("/images/jumbotron.jpg");
+    background-size: cover;
+}
